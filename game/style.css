@@ -1,0 +1,196 @@
+@charset "utf-8";
+@font-face {
+  font-family: Norse Regular;
+  src: url(fonts/norse.otf);
+}
+
+body {
+  background: #333;
+  font-family: 'Norse Regular';
+}
+
+#wrap {
+  margin: 0 auto;
+  position: relative;
+  height: 720px;
+  width: 1280px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+#skip_button {
+  background-image: url(images/skip_button.png);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  opacity: 0.4;
+}
+
+#skip_button:hover {
+  cursor: pointer;
+}
+
+#background_intro {
+  display: none;
+  background-image: url(images/background_intro.png);
+  height: 720px;
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+#intro {
+  display: flex;
+  background-image: url(images/black_box.png);
+  height: 257px;
+  width: 450px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.instruction {
+  display: none;
+  margin: auto;
+}
+
+.instruction.active {
+  display: block;
+  margin: auto;
+}
+
+.header {
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+p {
+  margin: 10px auto;
+}
+
+.right_button {
+  background-image: url(images/right_button.png);
+  height: 28px;
+  width: 49px;
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+}
+
+.left_button {
+  background-image: url(images/left_button.png);
+  height: 28px;
+  width: 49px;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+
+.right_button:hover,
+.left_button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 100ms ease;
+}
+
+#wrapSE {
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+#sound {
+  background-image: url(images/sound_on.png);
+  height: 30px;
+  width: 27px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 525px);
+  cursor: pointer;
+  display: none;
+}
+
+#wrapSE.off #sound {
+  background-image: url(images/sound_off.png);
+}
+
+#exit {
+  background-image: url(images/exit.png);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 575px);
+  cursor: pointer;
+  display: none;
+}
+
+#sound:hover,
+#sound.off:hover,
+#exit:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: 100ms ease;
+}
+
+#gameName {
+  height: 41px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#player,
+#bear,
+#trees,
+#ax,
+#stats,
+#info {
+  display: block;
+  position: relative;
+  /* cursor: pointer; */
+  margin: -720px auto 0;
+}
+
+#player,
+#bear,
+#trees,
+#ax {
+  z-index: 2;
+}
+
+#info {
+  z-index: 3;
+}
+
+#stats {
+  z-index: 4;
+}
+
+#losing,
+#winning {
+  display: none;
+  margin: 0 auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Web-project Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="intro.js"></script>
+    <script src="player.js"></script>
+    <script src="bear.js"></script>
+    <script src="trees.js"></script>
+    <script src="ax.js"></script>
+    <script src="info.js"></script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <div id="gameName"></div>
+    <div id="wrap">
+      <video id="animation" autoplay controls>
+        <source src="animation.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        Video tag not supported. Download the video <a href="animation.mp4">here</a>.
+      </video>
+      <div id="skip_button"></div>
+    </div>
+    <div id="background_intro">
+      <div id="intro">
+        <div id="instruction-1" class="instruction active">
+          <span class="header">Bear chase</span><br />
+          <p>A nearby bear got mad after seeing you wear a bear pelt! Run for your life!</p>
+          <div class="right_button" onclick="next(2)"></div>
+        </div>
+        <div id="instruction-2" class="instruction">
+          <span class="header">Controls</span><br />
+          <p>Use "W", "A", "S" and "D" to move.<br />Click or space to pause.</p>
+          <div class="left_button" onclick="back(1)"></div>
+          <div class="right_button" onclick="next(3)"></div>
+        </div>
+        <div id="instruction-3" class="instruction">
+          <span class="header">Hint</span><br />
+          <p>Avoid hitting the trees.<br />Survive until the end of the time limit.</p>
+          <div class="left_button" onclick="back(2)"></div>
+          <div class="right_button" onclick="next(4)"></div>
+        </div>
+        <div id="instruction-4" class="instruction">
+          <p>Begin by clicking the right arrow.</p>
+          <p><span class="header">GOOD LUCK!</span></p>
+
+          <div class="left_button" onclick="back(3)"></div>
+          <div class="right_button" onclick="start()"></div>
+        </div>
+      </div>
+    </div>
+    <div id="wrapSE" class="on">
+      <div id="sound" onclick="switchSound()"></div>
+      <div id="exit" onclick="exitGame()"></div>
+    </div>
+    <canvas id="map"></canvas> <canvas id="trees"></canvas> <canvas id="ax"></canvas> <canvas id="player"></canvas>
+    <canvas id="bear"></canvas> <canvas id="info"></canvas> <canvas id="stats"></canvas> <audio id="audio"></audio>
+    <video id="losing">
+      <source src="losing.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      Video tag not supported. Download the video <a href="losing.mp4">here</a>.
+    </video>
+    <video id="winning">
+      <source src="winning.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+      Video tag not supported. Download the video <a href="winning.mp4">here</a>.
+    </video>
+  </body>
+</html>
