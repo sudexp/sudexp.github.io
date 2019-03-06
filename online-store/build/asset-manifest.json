@@ -1,0 +1,17 @@
+{
+  "main.css": "./static/css/main.38952193.chunk.css",
+  "main.js": "./static/js/main.c2549c16.chunk.js",
+  "main.js.map": "./static/js/main.c2549c16.chunk.js.map",
+  "static/css/1.7e7d7556.chunk.css": "./static/css/1.7e7d7556.chunk.css",
+  "static/js/1.175d07dd.chunk.js": "./static/js/1.175d07dd.chunk.js",
+  "static/js/1.175d07dd.chunk.js.map": "./static/js/1.175d07dd.chunk.js.map",
+  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
+  "runtime~main.js.map": "./static/js/runtime~main.4a686d48.js.map",
+  "static/media/roboto-fontface.css": "./static/media/Roboto-BlackItalic.cc2fadc3.woff",
+  "static/media/all.css": "./static/media/fa-brands-400.8b7a9afd.woff",
+  "static/css/main.38952193.chunk.css.map": "./static/css/main.38952193.chunk.css.map",
+  "static/css/1.7e7d7556.chunk.css.map": "./static/css/1.7e7d7556.chunk.css.map",
+  "index.html": "./index.html",
+  "precache-manifest.85f697c577fd41d650926ef14cf8f4e8.js": "./precache-manifest.85f697c577fd41d650926ef14cf8f4e8.js",
+  "service-worker.js": "./service-worker.js"
+}
