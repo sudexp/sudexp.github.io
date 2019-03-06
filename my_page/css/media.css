@@ -1,0 +1,927 @@
+/* Large desktops and laptops */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 110%;
+    } 
+    
+    figure img {
+        top: 0.25em;
+    }
+    
+    .show-sm {
+        display: none;
+    }
+
+    /* .mini-img {
+        width: 8.4em;
+    } */
+}
+    
+/* Portrait tablets and medium desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    figure img {
+        top: 0.3125em;
+    }
+
+    .show-sm {
+        display: none;
+    }
+
+    .footer {
+        padding: 3.75em 0.4375em;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 90%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+       display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 2vh;
+    }
+
+    header .content-left {
+        height: 0vh;    
+    }
+
+    header .content-right {
+        height: 90vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 10.5625em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+
+    .name {
+        padding: 1.875em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+    
+    .wrap-bottom {
+        top: 88%;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+
+    .wrap-photo {
+        width: 19.6%;
+    }
+
+    /* .mini-img {
+        width: 8.4em;
+    }   */
+
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media only screen and (min-width: 665px) and (max-width: 767px) {
+    body {
+        font-size: 80%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+        display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 2vh;
+    }
+
+    header .content-left {
+        height: 0;    
+    }
+
+    header .content-right {
+        height: 90vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 9.4275em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+
+    .name {
+        padding: 1.875em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+    
+    .wrap-bottom {
+        top: 88%;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+
+    /* .mini-img {
+        width: 10.08em;
+    } */
+    
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 664px) {
+    body {
+        font-size: 70%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+        display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 2vh;
+    }
+
+    header .content-left {
+        height: 0;    
+    }
+
+    header .content-right {
+        height: 90vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 10em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+
+    .name {
+        padding: 1.875em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+
+    .wrap-bottom {
+        top: 85%;
+    }
+
+    .header-bottom {
+        white-space: normal;
+    }
+
+    .bottom {
+        display: inline-block;
+        text-align: center;
+        width: 49.5%;
+        padding-top: 0.625em;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+
+    .p-bottom20 {
+        padding-bottom: 0.625em;
+    }
+
+    /* .mini-img {
+        width: 7.98em;
+    }   */
+
+    .footer-text {
+        display: inline-block;
+        text-align: center;
+        width: 49.5%;
+        padding-top: 0.625em;
+    }
+
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .skills {
+        width: 100%;
+        margin: 1.875em 0;
+        display: block;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}
+
+/* Landscape phones and smaller */
+@media only screen and (min-width: 370px) and (max-width: 479px) {
+    body {
+        font-size: 65%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+        display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 2vh;
+    }
+
+    .flag {
+        float: right;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    header .content-left {
+        height: 0;    
+    }
+
+    header .content-right {
+        height: 90vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 10em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+
+    .name {
+        padding: 1.875em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+    
+    .wrap-bottom {
+        top: 82%;
+    }
+
+    .header-bottom {
+        white-space: normal;
+    }
+
+    .bottom {
+        display: inline-block;
+        text-align: center;
+        width: 49.4%;
+        padding-top: 0.625em;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+
+    .p-bottom20 {
+        padding-bottom: 0.625em;
+    }
+
+    /* .mini-img {
+        width: 7.14em;
+    }   */
+    
+    .footer-text {
+        display: inline-block;
+        text-align: center;
+        width: 49.5%;
+        padding-top: 0.625em;
+    }
+
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .skills {
+        width: 100%;
+        margin: 1.875em 0;
+        display: block;
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    body {
+        font-size: 60%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+        display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 2vh;
+    }
+
+    #change_styles {
+        padding: 0.11em;
+    }
+
+    .flag {
+        float: right;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    header .content-left {
+        height: 0;    
+    }
+
+    header .content-right {
+        height: 90vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 10em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+
+    .name {
+        padding: 1.875em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+
+    .wrap-bottom {
+        top: 80%;
+    }
+
+    .header-bottom {
+        white-space: normal;
+    }
+
+    .bottom {
+        display: inline-block;
+        text-align: center;
+        width: 49.5%;
+        padding-top: 0.625em;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+
+    .p-bottom20 {
+        padding-bottom: 0.625em;
+    }
+
+    .wrap-photo {
+        width: 49.5%;
+    }
+
+    /* .mini-img {
+        width: 10.08em;
+    } */
+
+    .footer-text {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding-top: 0.625em;
+    }
+
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .skills {
+        width: 100%;
+        margin: 1.875em 0;
+        display: block;
+    }
+
+    .download {
+        width: 100%;
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    body {
+        width: 260px;		
+    }
+}
+
+@media screen and (max-height: 500px) {
+    body {
+        font-size: 70%;
+    } 
+
+    nav,
+    a.anchor {
+        display: none;
+    }
+    
+    #article {
+        padding-top: 0;
+    }
+
+    .content-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    section .content-left,
+    footer .content-left {
+        border-top: 0.0625em solid #ececec;
+        border-bottom: 0.0625em solid #ececec;
+    }
+
+    .content-right {
+        margin-left: 0;
+    }
+
+    .show-lg {
+        display: none;
+    }
+
+    .wrap-icons {
+        margin-top: 3vh;
+        height: 10vh;
+    }
+
+    header .content-left {
+        height: 0;    
+    }
+
+    header .content-right {
+        height: 87vh;    
+    }
+
+    .wrap-top {
+        top: 30%;
+        left: calc(50% - 10em);
+        text-align: center;
+    }
+
+    #figure {
+        background-color: #fff;
+        height: 10em;
+        width: 10em; 
+        border-radius: 5em;
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #figure img {
+        height: 13.125em;        
+        position: relative;
+        top: 0.3125em;
+        left: 0;
+    }
+    
+    .firstname {
+        font-size: 2.32em;
+    }
+    
+    .surname {
+        font-size: 2.56em;
+        padding-bottom: 0.75em;
+    }
+
+    .name {
+        padding: 1em 0 0;
+    }
+    
+    .school {
+        padding: 0;
+    }
+
+    .wrap-bottom {
+        top: 75%;
+    }
+
+    .resume {
+        padding-bottom: 1.5em;
+    }
+
+    .bottom {
+        display: inline-block;
+        text-align: center;
+        width: 24.5%;
+    }
+
+    .header-bottom {
+        padding-top: 1em;
+    }
+
+    section .content-right {
+        padding: 0;
+    }
+
+    .wrap-left,
+    .wrap-right,
+    .footer {
+        padding: 1.875em;
+    }
+    
+    .footer-text {
+        display: inline-block;
+        text-align: center;
+        width: 24.5%;
+        padding-top: 0.625em;
+    }
+
+    .copyright {
+        border-top: 0.0625em solid #ececec;
+    }
+
+    section .content-left p {
+        padding-top: 0.3125em;
+    }
+
+    .skills {
+        width: 49.5%;
+        margin: 0.9375em 0;
+        display: inline-block;
+    }
+
+    .back-top {
+        display: none;
+    }
+
+    .color-0 {
+        background-color: #fff;
+    }
+
+    .color-1 {
+        background-color: #fafafa;
+    }
+
+    .color-2 {
+        background-color: #fff;
+    }
+
+    .color-3 {
+        background-color: #fafafa;
+    }
+
+    .color-4 {
+        background-color: #fff;
+    }
+}

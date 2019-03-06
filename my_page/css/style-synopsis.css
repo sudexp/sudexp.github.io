@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+} 
+
+#article {
+    padding-top: 0;
+}
+
+header {
+	height: 100vh;
+    position: relative;
+}
+
+.header-top {
+	padding-left: 0.9375em;
+}
+
+.content-left {
+    float: left;
+    width: 33%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #727272;
+    margin: 0;
+}
+
+.content-right {
+    margin-left: 33%;
+    text-align: justify;
+}
+
+.wrap-icons {
+    padding: 1em 3.125em 0;
+}
+
+#button {
+    float: left;
+    color: #727272;
+    text-align: center;
+    padding-top: 0.125em;
+}
+
+label {
+    font-size: 0.625em;
+    padding-top: 0;
+}
+
+#change_styles {
+    background-color: #939393;
+    width: 1.875em;
+    height: 1.3125em;
+    padding: 0.125em;
+}
+
+#cube {
+    background-color: #fff;
+    width: 0.875em;
+    height: 1.3125em;
+    transition: 400ms;
+    position: relative;
+    left: 0; 
+}
+
+.back-top,
+.back-bottom {
+    float: right;
+}
+
+.back-bottom {
+    margin: 0 3.125em 1em 0;
+}
+
+.back-top a,
+.back-bottom a {
+    font-size: 1em;
+}
+
+.synopsis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.synopsis p {
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #727272;
+    font-size: 6.25em;
+    font-weight: 600;
+}
+
+.wrap-left,
+.wrap-right {
+    padding: 3.75em;
+}
+
+/* .wrap-left,
+.wrap-right {
+    padding: 20%;
+} */
+
+.wrap-left {
+    padding-bottom: 0;
+}
+
+h2,
+p {
+    font-size: 1.125em;
+    /* font-size: 1.2vw; */
+    line-height: 1.6em;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #727272;
+    font-weight: 600;
+}
+
+p {
+    color: #939393;
+}
+
+a,
+a:visited {
+    color: #727272;
+    text-decoration: none;
+    transition: 500ms;
+}
+ 
+a:hover,
+a:active {
+    color: #ffbc00;
+}
+
+.color-1 {
+    background-color: #fbfbfb;
+}
+
+.color-2 {
+    background-color: #fff;
+}
+
+.color-3 {
+    background-color: #f8f8f8;
+}
+
+.color-4 {
+    background-color: #fcfcfc;
+}

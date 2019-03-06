@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!-- предназначен для указания типа текущего документа, HTML 5 для всех документов  -->
+<html lang="ru">
+  <!-- указание языка документа  -->
+  <head>
+    <meta charset="utf-8" />
+    <!-- кодировка сайта  -->
+    <title>My page: Dmitry Sklyarov</title>
+    <!-- тег определяет заголовок документа  -->
+    <meta
+      name="keywords"
+      lang="ru"
+      content="Дмитрий Скляров, университет прикладных наук JAMK, отделение IT-технологий, Ювяскюля, Финляндия"
+    />
+    <!-- мета-тег ключевых слов -->
+    <meta name="description" lang="ru" content="персональная страница Дмитрия Склярова" />
+    <!-- мета-тег описания страницы -->
+    <meta name="author" lang="ru" content="Дмитрий Скляров" />
+    <!-- мета-тег автора -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- viewport - это видимая пользователю область веб-страницы: используется для установки ширины и начального масштаба для окна просмотра на мобильных устройствах -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- подключает основные стили -->
+    <link media="screen" rel="stylesheet" href="css/media.css" />
+    <!-- подключает медиа -->
+    <link rel="stylesheet" type="text/css" href="css/style-dark.css" />
+    <!-- подключает стиль dark -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <!-- подключает библиотеку ccs bootstrap для отображения картинок -->
+    <link rel="icon" href="images/icon.png" />
+    <!-- иконка "фавикон"  -->
+    <link rel="stylesheet" href="css/flag-icons.css" />
+    <!-- css для флагов -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+    <!-- шрифты "Лато" -->
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <!-- css для иконок -->
+    <link rel="stylesheet" type="text/css" href="lightbox2-master/src/css/lightbox.css" />
+    <!-- css для галереи -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- css для анимации -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- скрипт для картинок -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <!-- скрипт для прогресса -->
+    <script src="lightbox2-master/src/js/lightbox.js"></script>
+    <!-- script для галереи -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- скрипт для анимации -->
+    <script type="text/javascript" src="js/my-site.js"></script>
+    <!-- скрипт для остального -->
+  </head>
+  <body class="light">
+    <!-- панель навигации -->
+    <nav class="wow zoomIn" data-wow-duration="1.0s" data-wow-delay="0.5s">
+      <!-- подключение эффекта для анимации -->
+      <a href="#Intro">Введение</a>
+      <a href="#Hobbies">Хобби</a>
+      <a href="#Education">Образование</a>
+      <a href="#Experience">Опыт</a>
+      <a href="#Expertise">Компетенция</a>
+      <a href="#Skills">Навыки</a>
+      <a href="#Gallery">Галерея</a>
+      <a href="#Contact">Контакты</a>
+    </nav>
+    <div id="article">
+      <div class="color-0">
+        <div class="content-right color-2">
+          <!-- верхнаяя обертка для кнопки, флагов и иконок -->
+          <div class="wrap-icons">
+            <!-- кнопка для переключения темы -->
+            <div id="button" class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.75s">
+              <div id="change_styles">
+                <div id="cube"></div>
+              </div>
+              <label>тема</label>
+            </div>
+            <!-- флаги для переключения языков -->
+            <div class="flag wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.75s">
+              <a href="index-fi.html" title="Suomeksi"><i class="flag-icons FI"></i></a>
+              <a href="index-en.html" title="In English"><i class="flag-icons GB"></i></a>
+              <a href="index-ru.html" title="По-русски"><i class="flag-icons RU"></i></a>
+            </div>
+            <!-- иконки на соц.сети -->
+            <div class="icon wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="1.0s">
+              <a href="https://www.linkedin.com/in/dmitry-sklyarov-120183/" target="_blank" title="Linkedin"
+                ><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i
+              ></a>
+              <a href="https://github.com/sudexp" target="_blank" title="Github"
+                ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.slack.com" target="_blank" title="Slack"
+                ><i class="fa fa-slack fa-2x" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.facebook.com/dmitry.sklyarov.120183" target="_blank" title="Facebook"
+                ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i
+              ></a>
+              <!-- http://www.facebook.com/profile.php?id=100011920477763 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- раздел представления и контактной информации -->
+      <header class="color-0">
+        <!-- фото -->
+        <figure class="show-lg wow zoomIn" data-wow-duration="1.0s" data-wow-delay="1.25s">
+          <!-- фото для экранов width => 992px -->
+          <img src="images/dmitry.png" alt="Дмитрий Скляров" />
+        </figure>
+        <div class="content-right color-2">
+          <!-- обертка для фото, имени, института -->
+          <div class="wrap-top">
+            <!-- фото для экранов width < 992px -->
+            <div id="figure" class="show-sm wow zoomIn" data-wow-duration="1.0s" data-wow-delay="1.25s">
+              <img src="images/dmitry.png" alt="Дмитрий Скляров" />
+            </div>
+            <!-- имя, фамилия -->
+            <div class="name wow zoomIn" data-wow-duration="1.0s" data-wow-delay="1.55s">
+              <p class="firstname">Дмитрий</p>
+              <p class="surname">Скляров</p>
+            </div>
+            <!-- институт -->
+            <p class="school wow zoomIn" data-wow-duration="1.0s" data-wow-delay="1.75s">
+              Университет прикладных наук JAMK
+            </p>
+          </div>
+          <!-- обертка для резюме и контактной информации -->
+          <div class="wrap-bottom">
+            <!-- резюме (загрузка при нажатии) -->
+            <div class="resume wow zoomIn" data-wow-duration="1.0s" data-wow-delay="2.0s">
+              <a href="dmitry_sklyarov-cv.pdf" title="Resume"
+                ><i class="fa fa-download" aria-hidden="true"></i> Скачать мое резюме</a
+              >
+            </div>
+            <!-- обертка для контактной информации -->
+            <div class="header-bottom wow zoomIn" data-wow-duration="1.0s" data-wow-delay="2.0s">
+              <!-- местоположение -->
+              <div class="bottom">
+                <p class="font-72 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.25s">Дислокация</p>
+                <p class="font-93 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.25s">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i
+                  ><a
+                    class="header-link"
+                    href="https://www.google.com/maps/@60.7913374,27.2554699,6z"
+                    title="Location"
+                    target="_blank"
+                  >
+                    Jyväskylä, Finland</a
+                  >
+                </p>
+              </div>
+              <!-- телефон (при нажатии - программа для звонков) -->
+              <div class="bottom">
+                <p class="font-72 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.5s">Телефон</p>
+                <p class="font-93 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.5s">
+                  <i class="fa fa-phone" aria-hidden="true"></i
+                  ><a class="header-link" href="tel:+358404180540" title="Phone" target="_blank"> +358404180540</a>
+                </p>
+              </div>
+              <!-- переход на вэб страницу (пока jamk.fi) -->
+              <div class="bottom">
+                <p class="font-72 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.75s">Веб-страница</p>
+                <p class="font-93 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="2.75s">
+                  <i class="fa fa-globe" aria-hidden="true"></i
+                  ><a class="header-link" href="https://www.jamk.fi/fi/Etusivu/" title="Website" target="_blank">
+                    dmitry-sklyarov.com</a
+                  >
+                </p>
+              </div>
+              <!-- электронная почта (при нажатии - почтовый агент) -->
+              <div class="bottom">
+                <p class="font-72 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="3.0s">Эл.почта</p>
+                <p class="font-93 wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="3.0s">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i
+                  ><a class="header-link" href="mailto:dm.sklyarov@icloud.com" title="Email" target="_blank">
+                    dm.sklyarov@icloud.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- раздел основной информации -->
+      <section class="color-3">
+        <div class="content-left">
+          <!-- применяется для отображения контента, расположенного в левой части -->
+          <a class="anchor" id="Intro"></a>
+          <!-- применяется для компенсации фиксированного по высоте nav -->
+          <div class="wrap-left">
+            <!-- обертка контента левой части -->
+            <h2>Введение</h2>
+            <p class="small">Коротко о себе.</p>
+          </div>
+        </div>
+        <div class="content-right color-4">
+          <!-- применяется для отображения контента, расположенного в правой части -->
+          <div class="wrap-right">
+            <!-- обертка контента правой части -->
+            <p class="p-bottom20 wow flash" data-wow-duration="3s" data-wow-delay="1s" data-wow-offset="200">
+              Добро пожаловать на мою страницу!
+            </p>
+            <p>
+              Меня зовут Дмитрий, мне 36 лет. Я из России, но живу в Финляндии уже около 4х лет. Женат, двое детей. У
+              меня высшее образование инженера-механика, опыт работы государственным судебным экспертом более 8 лет.
+            </p>
+            <p class="p-top15">
+              В данный момент я заинтересован в смене профессии: учусь в Университете прикладных наук JAMK г. Ювяскюля
+              на отделении IT-технологий.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="color-1">
+        <div class="content-left">
+          <a class="anchor" id="Hobbies"></a>
+          <div class="wrap-left">
+            <h2>Хобби</h2>
+            <p class="small">Основные хобби и интересы.</p>
+          </div>
+        </div>
+        <div class="content-right color-2">
+          <div class="wrap-right">
+            <p>Я - разносторонний человек и у меня много различных увлечений. Приведу хотя бы 3 из них:</p>
+            <h2>Шахматы.</h2>
+            <p>
+              Предпочитаю интеллектуальные игры и шахматы – одна из них. Играю в шахматы с детства - это главное хобби в
+              моей жизни. Являюсь
+              <a
+                class="chess"
+                title="FIDE Chess Profile"
+                target="_blank"
+                href="https://ratings.fide.com/card.phtml?event=4157052"
+                >международным мастером</a
+              >
+              по шахматам (с 2012 г.). В данный момент играю в шахматы редко (в основном за клуб Ювяскюля в командном
+              первенстве Финляндии).
+            </p>
+            <p class="p-top15">Лучшими достижениями в шахматах были:</p>
+            <ul>
+              <li>многократный чемпион Республики Карелия;</li>
+              <li>чемпион Баренц-региона (2002 г.);</li>
+              <li>чемпион Северо-Запада России (быстрые шахматы, 2014 г.);</li>
+              <li>чемпион Финляндии (быстрые шахматы, 2018).</li>
+            </ul>
+            <p>В свободное время из активных видов спорта предпочитаю езду на велосипеде и настольный теннис.</p>
+            <h2>Езда на велосипеде.</h2>
+            <p>
+              В Финляндии у людей отличные условия для езды на велосипеде - велосипедная инфраструктура признана одной
+              из лучших в мире! Катаемся на велосипедах с удовольствием всей семьей.
+            </p>
+            <h2>Настольный теннис.</h2>
+            <p>
+              Мне нравится играть в настольный теннис. Он развивает, например, ловкость, скорость реакции, способность
+              концентрировать внимание, зрение и т.д.
+            </p>
+            <p class="p-top15">Также люблю слушать хорошую музыку.</p>
+          </div>
+        </div>
+      </section>
+      <section class="color-3">
+        <div class="content-left">
+          <a class="anchor" id="Education"></a>
+          <div class="wrap-left">
+            <h2>Образование</h2>
+            <p class="small">Сведения об основном образовании.</p>
+          </div>
+        </div>
+        <div class="content-right color-4">
+          <div class="wrap-right">
+            <div class="experience">
+              <div class="top">
+                <div class="circle"><!-- рисует круг --></div>
+                <div class="year">
+                  <p>2017-</p>
+                </div>
+              </div>
+              <div class="down">
+                <div class="place">
+                  <p class="big">Университет прикладных наук JAMK</p>
+                  <p class="city">Ювяскюля, Финляндия</p>
+                </div>
+                <div class="process">
+                  <p>
+                    Высшее образование: Бакалавриат инженерных, информационных и коммуникационных технологий (студент
+                    второго курса).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="top">
+                <div class="circle"></div>
+                <div class="year">
+                  <p>2000-2005</p>
+                </div>
+              </div>
+              <div class="down">
+                <div class="place">
+                  <p class="big">Петрозаводский государственный университет</p>
+                  <p class="city">Петрозаводск, Россия</p>
+                </div>
+                <div class="process">
+                  <p>
+                    Высшее образование: специализация “Технический менеджмент”, специальность “Машины и оборудование
+                    лесного комплекса” (Лесоинженерный факультет).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="top">
+                <div class="circle"></div>
+                <div class="year">
+                  <p>1990-2000</p>
+                </div>
+              </div>
+              <div class="down">
+                <div class="place">
+                  <p class="big">Лицей №1</p>
+                  <p class="city">Петрозаводск, Россия</p>
+                </div>
+                <div class="process">
+                  <p>Базовое 11-летнее школьное образование с углубленным изучением физики и математики.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="color-1">
+        <div class="content-left">
+          <a class="anchor" id="Experience"></a>
+          <div class="wrap-left">
+            <h2>Опыт</h2>
+            <p class="small">Опыт работы и военная служба.</p>
+          </div>
+        </div>
+        <div class="content-right color-2">
+          <div class="wrap-right">
+            <div class="experience">
+              <div class="top">
+                <div class="circle"></div>
+                <div class="year">
+                  <p>2006-2014</p>
+                </div>
+              </div>
+              <div class="down">
+                <div class="place">
+                  <p class="big">
+                    ФБУ Северо-западный региональный центр судебной эспертизы Минюста России (Петрозаводский филиал)
+                  </p>
+                  <p class="city">Петрозаводск, Россия</p>
+                </div>
+                <div class="process">
+                  <p>Старший судебный эксперт по специальностям:</p>
+                  <ul>
+                    <li>исследование обстоятельств дорожно-транспортных происшествий;</li>
+                    <li>исследование технического состояния транспортных средств;</li>
+                    <li>исследование транспортных средств, в том числе с целью их оценки;</li>
+                    <li>определение стоимости восстановительного ремонта транспортных средств.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="experience">
+              <div class="top">
+                <div class="circle"></div>
+                <div class="year">
+                  <p>2005-2006</p>
+                </div>
+              </div>
+              <div class="down">
+                <div class="place">
+                  <p class="big">Северный Флот, войсковая часть 15010, 694 рота охраны.</p>
+                  <p class="city">Заозерск, Россия.</p>
+                </div>
+                <div class="process">
+                  <p>Военная служба по призыву, сержант.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="color-3">
+        <div class="content-left">
+          <a class="anchor" id="Expertise"></a>
+          <div class="wrap-left">
+            <h2>Компетенция</h2>
+            <p class="small">Навыки в IT-сфере.</p>
+          </div>
+        </div>
+        <div class="content-right color-4">
+          <div class="wrap-right">
+            <p>
+              Я начал свое знакомство с IT-технологиями около 1,5 лет назад, и больше всего я заинтересован в
+              веб-разработке. За это короткое время я познакомился со следующими основными технологиями, которые, я
+              надеюсь, послужат основой моей будущей профессии:
+            </p>
+            <p class="p-top15">
+              - Web Programming (JavaScript, React, VueJS),<br />- Web Service Administration (Linux, Apache),<br />-
+              Web Server Programming (PHP, Laravel),<br />- Web Technologies (HTML5),<br />- Web Visualization
+              (CSS3),<br />- Databases (MySQL),<br />- Data Structures and Algorithms.
+            </p>
+            <p class="p-top15">
+              Также у меня большой опыт в исследовании дорожно-транспортных происшествий и их последствий, но сейчас я в
+              большей степени сосредоточен на Вэб.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="color-1">
+        <div class="content-left">
+          <a class="anchor" id="Skills"></a>
+          <div class="wrap-left">
+            <h2>Skills</h2>
+            <p class="small">Некоторые достижения в области IT.</p>
+          </div>
+        </div>
+        <div class="content-right color-2">
+          <div class="wrap-skill">
+            <p>
+              Непросто быть объективным в оценке своих собственных навыков/ знаний, особенно без достаточного опыта их
+              использования. Поэтому следующая оценка довольно условна.
+            </p>
+          </div>
+          <div class="wrap-progress">
+            <div class="skills">
+              <p><span class="orange">80</span><span class="little">%</span> HTML5</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="80"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">60</span><span class="little">%</span> CSS3, Bootstrap4, Grid</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="60"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">60</span><span class="little">%</span> JavaScript, JQuery</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="60"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">40</span><span class="little">%</span> React</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="40"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">20</span><span class="little">%</span> VueJS</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="20"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">30</span><span class="little">%</span> PHP, Laravel, Apache</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="30"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">50</span><span class="little">%</span> MySQL</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="50"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">60</span><span class="little">%</span> GIT</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="60"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">30</span><span class="little">%</span> Networks, Linux-Servers</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="30"></progress>
+              </div>
+            </div>
+            <div class="skills">
+              <p><span class="orange">40</span><span class="little">%</span> Adobe Photoshop, Premiere</p>
+              <div class="progressbar">
+                <progress class="scalebar" value="0" max="100" data-end="40"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="color-3">
+        <div class="content-left">
+          <a class="anchor" id="Gallery"></a>
+          <div class="wrap-left">
+            <h2>Галерея</h2>
+            <p class="small">Несколько фотографий со мной.</p>
+          </div>
+        </div>
+        <div class="content-right color-4">
+          <div class="wrap-right row">
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/1.jpg" data-lightbox="group" data-title="Image1"
+                ><img src="images/1_thumb.jpg" class="mini-img" alt="Image1"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/2.jpg" data-lightbox="group" data-title="Image2"
+                ><img src="images/2_thumb.jpg" class="mini-img" alt="Image2"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/3.jpg" data-lightbox="group" data-title="Image3"
+                ><img src="images/3_thumb.jpg" class="mini-img" alt="Image3"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/4.jpg" data-lightbox="group" data-title="Image4"
+                ><img src="images/4_thumb.jpg" class="mini-img" alt="Image4"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/5.jpg" data-lightbox="group" data-title="Image5"
+                ><img src="images/5_thumb.jpg" class="mini-img" alt="Image5"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/6.jpg" data-lightbox="group" data-title="Image6"
+                ><img src="images/6_thumb.jpg" class="mini-img" alt="Image6"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/7.jpg" data-lightbox="group" data-title="Image7"
+                ><img src="images/7_thumb.jpg" class="mini-img" alt="Image7"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/8.jpg" data-lightbox="group" data-title="Image8"
+                ><img src="images/8_thumb.jpg" class="mini-img" alt="Image8"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/9.jpg" data-lightbox="group" data-title="Image9"
+                ><img src="images/9_thumb.jpg" class="mini-img" alt="Image9"
+              /></a>
+            </div>
+            <div class="wrap-photo col-sm-6 col-md-4 col-lg-4">
+              <a href="images/10.jpg" data-lightbox="group" data-title="Image10"
+                ><img src="images/10_thumb.jpg" class="mini-img" alt="Image10"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="color-1">
+        <div class="content-left">
+          <a class="anchor" id="Contact"></a>
+          <div class="wrap-left">
+            <h2>Контакты</h2>
+            <p class="small">Позвоните мне, быть может.</p>
+          </div>
+        </div>
+        <div class="content-right color-2">
+          <div class="footer">
+            <div class="footer-text">
+              <p class="font-72">Дислокация</p>
+              <p class="font-93">
+                <i class="fa fa-location-arrow" aria-hidden="true"></i
+                ><a
+                  class="header-link"
+                  href="https://www.google.com/maps/@60.7913374,27.2554699,6z"
+                  title="Location"
+                  target="_blank"
+                >
+                  Jyväskylä, Finland</a
+                >
+              </p>
+            </div>
+            <div class="footer-text">
+              <p class="font-72">Телефон</p>
+              <p class="font-93">
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><a class="header-link" href="tel:+358404180540" title="Phone" target="_blank"> +358404180540</a>
+              </p>
+            </div>
+            <div class="footer-text">
+              <p class="font-72">Веб-страница</p>
+              <p></p>
+              <p class="font-93">
+                <i class="fa fa-globe" aria-hidden="true"></i
+                ><a class="header-link" href="https://www.jamk.fi/fi/Etusivu/" title="Website" target="_blank">
+                  dmitry-sklyarov.com</a
+                >
+              </p>
+            </div>
+            <div class="footer-text">
+              <p class="font-72">Эл.почта</p>
+              <p class="font-93">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i
+                ><a class="header-link" href="mailto:dm.sklyarov@icloud.com" title="Email" target="_blank">
+                  dm.sklyarov@icloud.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Копирайт © Дмитрий Скляров 2019</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
