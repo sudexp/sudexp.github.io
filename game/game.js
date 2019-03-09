@@ -85,7 +85,7 @@ function init() {
   document.addEventListener('mousemove', mouseMove, false);
   document.addEventListener('click', mouseClick, false);
   // implementation of audio playback:
-  audio = new Audio('../../track.mp3');
+  audio = new Audio('track.mp3');
   audio.loop = true;
   audio.play();
   // implementation of pause in the game:
