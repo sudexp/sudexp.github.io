@@ -1,394 +1,404 @@
 @charset "utf-8"; /* кодировка сайта */
 
 body {
-    background-color: #fff; /* цвет фона */
-    font-family: 'Lato', Helvetica, Arial, sans-serif; /* выбор шрифтов */
-    font-size: 100%; /* размер шрифта (1em = 16px) */
-    margin: 0; /* отступ - пространство от границы элемента до внутренней границы его "родителя" */
+  background-color: #fff; /* цвет фона */
+  font-family: 'Lato', Helvetica, Arial, sans-serif; /* выбор шрифтов */
+  font-size: 100%; /* размер шрифта (1em = 16px) */
+  margin: 0; /* отступ - пространство от границы элемента до внутренней границы его "родителя" */
 }
 
 nav {
-    height: 5vh; /* относительная высота, эквивалентно 5% высоты окна браузера */
-    line-height: 5vh; /* устанавливает межстрочный интервал для текста*/
-    width: 100%; /* относительная ширина */
-    background-color: #fff;
-    text-align: center; /* выравнивание текста */
-    position: fixed; /* положение к точке экрана */
-    top: 0; /* положение от верхнего края */
-    z-index: 1; /* ось z (наложение) */
+  height: 5vh; /* относительная высота, эквивалентно 5% высоты окна браузера */
+  line-height: 5vh; /* устанавливает межстрочный интервал для текста*/
+  width: 100%; /* относительная ширина */
+  background-color: #fff;
+  text-align: center; /* выравнивание текста */
+  position: fixed; /* положение к точке экрана */
+  top: 0; /* положение от верхнего края */
+  z-index: 1; /* ось z (наложение) */
 }
 
 nav a,
 nav a:visited {
-    text-transform: uppercase; /* заглавные символы */
-    margin: 0.315em;
+  text-transform: uppercase; /* заглавные символы */
+  margin: 0.315em;
 }
 
-a.anchor { /* якорь для компенсации высоты nav переходе на раздел */
-    display: block; /* элемент показывается как блочный */
-    position: relative; /* положение относительно исходного места */
-    top: -5vh;
-    visibility: hidden; /* отображение элемента - элемент невидим */
+a.anchor {
+  /* якорь для компенсации высоты nav переходе на раздел */
+  display: block; /* элемент показывается как блочный */
+  position: relative; /* положение относительно исходного места */
+  top: -5vh;
+  visibility: hidden; /* отображение элемента - элемент невидим */
 }
 
 #article {
-    padding-top: 5vh; /* поле - расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое */
+  padding-top: 5vh; /* поле - расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое */
 }
 
 .content-left {
-    float: left;  /* выравнивает элемент по левому краю, а все остальные элементы, вроде текста, обтекают его по правой стороне */
-    width: 33%;
-    text-transform: uppercase;
-    text-align: right;
-    color: #727272; /* цвет текста элемента */
-    margin: 0;
+  float: left; /* выравнивает элемент по левому краю, а все остальные элементы, вроде текста, обтекают его по правой стороне */
+  width: 33%;
+  text-transform: uppercase;
+  text-align: right;
+  color: #727272; /* цвет текста элемента */
+  margin: 0;
 }
 
 .content-right {
-    margin-left: 33%;
-    text-align: justify; /* выравнивание по ширине */
+  margin-left: 33%;
+  text-align: justify; /* выравнивание по ширине */
 }
 
 .wrap-icons {
-    height: 8vh;
-    padding: 0 3.125em;
+  height: 8vh;
+  padding: 0 3.125em;
 }
 
 #button {
-    float: left;
-    color: #727272;
-    text-align: center;
-    padding-top: 0.125em;
+  float: left;
+  color: #727272;
+  text-align: center;
+  padding-top: 0.125em;
 }
 
 label {
-    font-size: 0.625em;
-    padding-top: 0;
+  font-size: 0.625em;
+  padding-top: 0;
 }
 
 #change_styles {
-    background-color: #939393;
-    width: 1.875em;
-    height: 1.55em; 
-    padding: 0.125em;
+  background-color: #939393;
+  width: 1.875em;
+  height: 1.55em;
+  padding: 0.125em;
 }
 
 #cube {
-    background-color: #fff;
-    width: 0.875em;
-    height: 1.3125em; /* высота элемента */
-    transition: 400ms; /* скорость изменения значения стилевого свойства, для которого применяется эффект перехода */
-    position: relative;
-    left: 0; /* положение относительно левого края исходного положения элемента */
+  background-color: #fff;
+  width: 0.875em;
+  height: 1.3125em; /* высота элемента */
+  transition: 400ms; /* скорость изменения значения стилевого свойства, для которого применяется эффект перехода */
+  position: relative;
+  left: 0; /* положение относительно левого края исходного положения элемента */
 }
 
 .flag {
-    float: left;
-    padding-left: 0.3125em;
+  float: left;
+  padding-left: 0.3125em;
 }
 
 .flag-icons {
-    height: 1.7em !important;
-    width: 2.26667em !important;
-    line-height: 1.7em !important;
+  height: 1.7em !important;
+  width: 2.26667em !important;
+  line-height: 1.7em !important;
 }
 
 .flag a:hover {
-    filter: grayscale(0%); /* Значение 100% или 1 превращает изображение в чёрно-белое. Значение 0 оставляет изображение исходно цветным. Значения меньше 100% (или меньше 1) линейно меняют цветность картинки. */
-    opacity: 1.0; /* при наведении курсора флаги принимают свои цвета */
+  filter: grayscale(
+    0%
+  ); /* Значение 100% или 1 превращает изображение в чёрно-белое. Значение 0 оставляет изображение исходно цветным. Значения меньше 100% (или меньше 1) линейно меняют цветность картинки. */
+  opacity: 1; /* при наведении курсора флаги принимают свои цвета */
 }
 
 .flag a {
-    filter: grayscale(100%);
-    transition: 500ms ease; /* aнимация начинается медленно, затем ускоряется и к концу движения опять замедляется */
-    opacity: 0.7; /* в данном случае изменяет оттенок greyscale с черно-белого на серый */
+  filter: grayscale(100%);
+  transition: 500ms ease; /* aнимация начинается медленно, затем ускоряется и к концу движения опять замедляется */
+  opacity: 0.7; /* в данном случае изменяет оттенок greyscale с черно-белого на серый */
 }
 
 .icon {
-    float: right;
+  float: right;
 }
 
 .icon a {
-    padding: 0 0.125em;
-    color: #939393;
+  padding: 0 0.125em;
+  color: #939393;
 }
 
 figure,
 #figure {
-    position: absolute; /* 1. если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера; 2. сли у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента */
-    top: 50%;
-    left: calc(18% - 7.5em); /* calc - используется для указания вычисляемого значения свойств, которые в качестве значений используют размер */
-    transform: translate(0, -50%); /* Сдвигает элемент по вертикали на указанное значение: положительное значение сдвигает вниз, отрицательное - вверх */
-    background-color: #fbfbfb;
-    height: 15em;
-    width: 15em; 
-    border-radius: 7.5em; /* радиус элемента */
-    overflow: hidden; /* overflow - управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. */
-    margin: 0; /* hidden - Отображается только область внутри элемента, остальное будет скрыто. */
+  position: absolute; /* 1. если у родителя значение position установлено как static или родителя нет, то отсчет координат ведется от края окна браузера; 2. сли у родителя значение position задано как fixed, relative или absolute, то отсчет координат ведется от края родительского элемента */
+  top: 50%;
+  left: calc(
+    18% - 7.5em
+  ); /* calc - используется для указания вычисляемого значения свойств, которые в качестве значений используют размер */
+  transform: translate(
+    0,
+    -50%
+  ); /* Сдвигает элемент по вертикали на указанное значение: положительное значение сдвигает вниз, отрицательное - вверх */
+  background-color: #fbfbfb;
+  height: 15em;
+  width: 15em;
+  border-radius: 7.5em; /* радиус элемента */
+  overflow: hidden; /* overflow - управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров. */
+  margin: 0; /* hidden - Отображается только область внутри элемента, остальное будет скрыто. */
 }
 
 figure img,
 #figure img {
-    position: relative;
-    height: 19.6875em;
-    /* filter: grayscale(100%); */
+  position: relative;
+  height: 19.6875em;
+  /* filter: grayscale(100%); */
 }
 
 header .content-right {
-	height: 87vh; /* высота секции равна высоте области просмотра */
-    position: relative; /* нужно для absolute header-bottom и <p> */
+  height: 87vh; /* высота секции равна высоте области просмотра */
+  position: relative; /* нужно для absolute header-bottom и <p> */
 }
 
 .wrap-top {
-    position: absolute;
-    top: 43%;
-    transform: translate(0, -50%);
+  position: absolute;
+  top: 43%;
+  transform: translate(0, -50%);
 }
 
 .name {
-    margin: 0;
-    padding-left: 4.375em;
+  margin: 0;
+  padding-left: 4.375em;
 }
 
 .firstname {
-    text-transform: lowercase; /* прописные буквы */
-    letter-spacing: 0.02em; /* интервал между символами */
-    font-size: 3.625em;
-    font-weight: 300;
-    color: #939393;
-    line-height: 0.9em; 
+  text-transform: lowercase; /* прописные буквы */
+  letter-spacing: 0.02em; /* интервал между символами */
+  font-size: 3.625em;
+  font-weight: 300;
+  color: #939393;
+  line-height: 0.9em;
 }
 
 .surname {
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
-    color: #ffbc00;
-    line-height: 0.9em; 
-    font-size: 4em;
-    font-weight: 700;
-    padding-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #ffbc00;
+  line-height: 0.9em;
+  font-size: 4em;
+  font-weight: 700;
+  padding-bottom: 1em;
 }
 
 .school {
-    transform: translate(0, -50%);
-    font-size: 1.125em;
-    font-weight: 300;
-    line-height: 1.0em;
-    padding-left: 4.375em;
+  transform: translate(0, -50%);
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1em;
+  padding-left: 4.375em;
 }
 
 .wrap-bottom {
-    position: absolute;
-    top: 85%;
-    transform: translate(0, -50%);
-    left: 3.125em;
-    right: 3.125em; 
+  position: absolute;
+  top: 85%;
+  transform: translate(0, -50%);
+  left: 3.125em;
+  right: 3.125em;
 }
 
 .resume {
-    text-transform: uppercase;
-    font-size: 0.875em;
-    text-align: right;
-    padding-bottom: 1.875em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  text-align: right;
+  padding-bottom: 1.875em;
 }
 
 .header-bottom {
-    border-top: solid 0.0625em #ececec;
-    white-space: nowrap;
-    padding-top: 1.25em;
-    left: 3.125em;
-    right: 3.125em; 
+  border-top: solid 0.0625em #ececec;
+  white-space: nowrap;
+  padding-top: 1.25em;
+  left: 3.125em;
+  right: 3.125em;
 }
 
 .bottom {
-    display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу */
-    text-align: center;
-    width: 24.5%;
+  display: inline-block; /* генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу */
+  text-align: center;
+  width: 24.5%;
 }
 
 .font-72 {
-    font-size: 0.875em;
-    font-weight: 600;
-    color: #727272;
-    padding: 0 0 0.625em 0;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #727272;
+  padding: 0 0 0.625em 0;
 }
 
 .font-93 {
-    font-size: 0.75em;
-    color: #939393;
-    padding: 0;
+  font-size: 0.75em;
+  color: #939393;
+  padding: 0;
 }
 
 .wrap-left {
-    padding: 3.75em;
+  padding: 3.75em;
 }
 
 .small {
-    text-transform: none;
-    font-size: 0.8125em;
+  text-transform: none;
+  font-size: 0.8125em;
 }
 
 .p-top15 {
-    padding-top: 0.9375em;
+  padding-top: 0.9375em;
 }
 
 section .content-right {
-    padding: 1.875em;
+  padding: 1.875em;
 }
 
 .wrap-right {
-    padding: 1.875em;
+  padding: 1.875em;
 }
 
 .p-bottom20 {
-    padding-bottom: 1.25em;
+  padding-bottom: 1.25em;
 }
 
 .p-bottom20,
 .big {
-    text-transform: uppercase;
-    color: #727272;
-    font-weight: 600;
+  text-transform: uppercase;
+  color: #727272;
+  font-weight: 600;
 }
 
-ul { /* тег маркерованного списка */
-    list-style-type: disc; /* Свойство изменяет типа маркера или удаляет маркер для маркированного и нумерованного списков. Наследуется. */
-    color: #939393;
-    margin: 0 0 1.875em;
+ul {
+  /* тег маркерованного списка */
+  list-style-type: disc; /* Свойство изменяет типа маркера или удаляет маркер для маркированного и нумерованного списков. Наследуется. */
+  color: #939393;
+  margin: 0 0 1.875em;
 }
 
-li { /* тег для формирования элемента списка */
-    padding-top: 0.625em;
+li {
+  /* тег для формирования элемента списка */
+  padding-top: 0.625em;
 }
 
 a.chess,
 a.chess:visited {
-    color: #ffbc00 !important;
+  color: #ffbc00 !important;
 }
 
 a.chess:hover {
-    color: #eca116 !important;
+  color: #eca116 !important;
 }
 
 a.chess:active {
-    color: #ffbc00;
+  color: #ffbc00;
 }
 
 .top p {
-    color: #bebebe;
+  color: #bebebe;
 }
 
-.circle { 
-    background-color: #ffbc00;
-    height: 0.625em;
-    width: 0.625em;
-    border-radius: 0.3125em;
-    float: left;
-    margin-top: 0.1875em;
+.circle {
+  background-color: #ffbc00;
+  height: 0.625em;
+  width: 0.625em;
+  border-radius: 0.3125em;
+  float: left;
+  margin-top: 0.1875em;
 }
 
-.year { 
-    margin-left: 1.82rem;
+.year {
+  margin-left: 1.82rem;
 }
 
-.year p { 
-    font-size: 0.625em;
+.year p {
+  font-size: 0.625em;
 }
 
-.down { 
-    border-left: solid 0.0625em #ececec;
-    margin-left: 0.25em;
-    padding: 0.625em 0 1.875em 0;
+.down {
+  border-left: solid 0.0625em #ececec;
+  margin-left: 0.25em;
+  padding: 0.625em 0 1.875em 0;
 }
 
 .down p {
-    text-align: left;
-    padding-left: 1.5625rem;
+  text-align: left;
+  padding-left: 1.5625rem;
 }
 
 .place,
-.process { 
-    width: 49.5%;
-    vertical-align: top;
-    display: inline-block;
+.process {
+  width: 49.5%;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .city {
-    font-size: 0.75em;
-    line-height: 3.5em;
+  font-size: 0.75em;
+  line-height: 3.5em;
 }
 
-.process p { 
-    padding-right: 0;
+.process p {
+  padding-right: 0;
 }
 
 .process ul {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .wrap-skill {
-    padding: 1.875em 1.875em 0;
+  padding: 1.875em 1.875em 0;
 }
 
 .wrap-progress {
-    padding-bottom: 1.875em;
+  padding-bottom: 1.875em;
 }
 
 .skills {
-    width: 49.5%;
-    margin: 0.9375em 0;
-    display: inline-block;
+  width: 49.5%;
+  margin: 0.9375em 0;
+  display: inline-block;
 }
 
 .skills p,
 .progressbar {
-    margin: 0 1.875em;
+  margin: 0 1.875em;
 }
 
 .skills p {
-    font-weight: 600;
-    color: #727272;
-    text-transform: uppercase;
-    padding: 0 0 0.3125em;
+  font-weight: 600;
+  color: #727272;
+  text-transform: uppercase;
+  padding: 0 0 0.3125em;
 }
 
 .progressbar {
-    padding: 0;
+  padding: 0;
 }
 
 .scalebar {
-    background-color: #ececec; /* цвет фона для firefox */
-	width: 100%;
-	height: 0.25em;
+  background-color: #ececec; /* цвет фона для firefox */
+  width: 100%;
+  height: 0.25em;
 }
 
 progress::-webkit-progress-bar {
-    background-color: #ececec; /* цвет фона для остальных браузеров*/
+  background-color: #ececec; /* цвет фона для остальных браузеров*/
 }
 
 progress::-webkit-progress-value {
-	background: #ffbc00; /* цвет бенунка для остальных браузеров */
+  background: #ffbc00; /* цвет бенунка для остальных браузеров */
 }
 
 progress::-moz-progress-bar {
-	background: #ffbc00; /* цвет бенунка для firefox */
+  background: #ffbc00; /* цвет бенунка для firefox */
 }
 
 .orange {
-    color: #ffbc00;
+  color: #ffbc00;
 }
 
 .little {
-    color: #ffbc00;
-    font-size: 0.875em;
-    font-weight: 400;
+  color: #ffbc00;
+  font-size: 0.875em;
+  font-weight: 400;
 }
 
 .wrap-photo {
-    text-align: center;
-    /* display: inline-block; */
-    /* width: 24.5%; */
-    margin-bottom: 0.5em;
+  text-align: center;
+  /* display: inline-block; */
+  /* width: 24.5%; */
+  margin-bottom: 0.5em;
 }
 
 /* .wrap-photo a {
@@ -396,95 +406,98 @@ progress::-moz-progress-bar {
 } */
 
 .mini-img {
-    width: 100%;
-    filter: grayscale(100%); 
-    transition: 1000ms ease;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 1000ms ease;
 }
 
-.mini-img:hover { /* при наведении курсора */
-    filter: grayscale(0%);
+.mini-img:hover {
+  /* при наведении курсора */
+  filter: grayscale(0%);
 }
 
 .download {
-    display: inline-block;
-    text-align: center;
-    width: 32.5%;
-    padding-top: 1.875em;
+  display: inline-block;
+  text-align: center;
+  width: 32.5%;
+  padding-top: 1.875em;
 }
 
 .footer {
-    margin: 0 auto;
-    padding: 3.75em;
+  margin: 0 auto;
+  padding: 3.75em;
 }
 
 .footer-text {
-    display: inline-block;
-    text-align: center;
-    width: 24.2%;
+  display: inline-block;
+  text-align: center;
+  width: 24.2%;
 }
 
 .copyright p {
-    color: #727272;
-    font-weight: 300;
-    font-size: 0.875em;
-    text-align: center;
-    line-height: 0;
-    padding: 1.5em;
+  color: #727272;
+  font-weight: 300;
+  font-size: 0.875em;
+  text-align: center;
+  line-height: 0;
+  padding: 1.5em;
 }
 
 h2,
 p {
-    font-size: 1.125em; /* em - относительная единица, body = 100% = 16px (по умолчанию) */
-    line-height: 1.6em;
-    margin: 0 auto;
+  font-size: 1.125em; /* em - относительная единица, body = 100% = 16px (по умолчанию) */
+  line-height: 1.6em;
+  margin: 0 auto;
 }
 
 h2 {
-    color: #727272;
-    font-weight: 600; /* normal = 400, bold = 700 */
+  color: #727272;
+  font-weight: 600; /* normal = 400, bold = 700 */
 }
 
 .content-right h2 {
-    padding-top: 1.25em;
-    padding-bottom: 0.3125em;
+  padding-top: 1.25em;
+  padding-bottom: 0.3125em;
 }
 
 p {
-    color: #939393;
+  color: #939393;
 }
 
 ul {
-    font-size: 0.9375em;
+  font-size: 0.9375em;
 }
 
 a,
-a:visited { /* задаёт для них стиль уже посещённым ссылкам */
-    color: #939393;
-    text-decoration: none; /* отменяет подчеркивание ссылки (все эффекты!), заданное по умолчанию */
-    transition: 500ms; /* плавность смены цвета */
+a:visited {
+  /* задаёт для них стиль уже посещённым ссылкам */
+  color: #939393;
+  text-decoration: none; /* отменяет подчеркивание ссылки (все эффекты!), заданное по умолчанию */
+  transition: 500ms; /* плавность смены цвета */
 }
- 
+
 a:hover, /* стиль элемента при наведении на него курсора мыши (но при этом элемент еще не активирован, иными словами кнопка мыши не нажата) */
-a:active { /* определяет стиль для активной ссылки (активной ссылка становится при нажатии на нее) */
-    color: #ffbc00;
+a:active {
+  /* определяет стиль для активной ссылки (активной ссылка становится при нажатии на нее) */
+  color: #ffbc00;
 }
 
 .color-0 {
-    background-color: #fbfbfb;
+  background-color: #fbfbfb;
 }
 
 .color-1 {
-    background-color: #fbfbfb;
+  background-color: #fbfbfb;
 }
 
 .color-2 {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .color-3 {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .color-4 {
-    background-color: #fcfcfc;
+  background-color: #fcfcfc;
 }
